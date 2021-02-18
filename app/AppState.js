@@ -25,8 +25,8 @@ class AppState extends EventEmitter {
       quantity: 1
     },
     chanclas:{
-      price: 200,
-      quantity: 2000
+      price: 2000,
+      quantity: 200
     },
     leafCrown:{
       price: 300,
