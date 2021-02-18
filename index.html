@@ -8,21 +8,127 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
-    <title>sporting-goods</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sporting Gods</title>
 </head>
+
+
+
 
 <body>
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">sporting-goods</span>
+                <span class="ml-2">Sporting Gods</span>
             </a>
-        </nav>
+            <div class="col text-center">
+                <p>Balance: <span id="balance">0</span></p>
+
+            </div>
+            <div class="col text-right">
+                <i class="fa fa-shopping-cart fa-2x" ></i>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Cart
+                  </button>
+
+                  
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
     </header>
-    <main>
-        <div id="app"></div>
+        
+        
+        <main>
+    <div class="container">
+        <div id="app">
+            <div class="row p-3">
+                <div class="col-12">
+                    <div class="card-deck">
+                        <div class="card">
+                          <img class="card-img-top" src="http://www.ancient-literature.com/wp-content/uploads/2020/11/artemis.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Artemis</h5>
+                            <p class="card-text">A limited-edition, one of a kind, magical Artemis statue.</p>
+                            <p class="card-text"><small class="text-muted">$500</small></p><button class="btn btn-info" onclick="app.sportingController.buy('artemis')">Buy</button>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="https://cdn11.bigcommerce.com/s-5g95y2/images/stencil/1280x1280/products/317/1214/Boar_Spear__13066.1571443098.png?c=2" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Spear</h5>
+                            <p class="card-text">Stabby stabby. (Lego man not included)</p>
+                            <p class="card-text"><small class="text-muted">$200</small></p><button class="btn btn-info" onclick="app.sportingController.buy('spear')">Buy</button>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="https://cdn.corporatefinanceinstitute.com/assets/tax-shields.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Shield</h5>
+                            <p class="card-text">The shield used by Hercules himself against Medusa.</p>
+                            <p class="card-text"><small class="text-muted">$300</small></p><button class="btn btn-info" onclick="app.sportingController.buy('shield')">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-12">
+                        <div class="card-deck">
+                            <div class="card">
+                              <img class="card-img-top" src="https://i.pinimg.com/originals/d7/51/e2/d751e26a4b034d11a4ce13d96fec3c9f.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Nike</h5>
+                                <p class="card-text">A limited-edition, one of a kind, victorious Nike statue.</p>
+                                <p class="card-text"><small class="text-muted">$1000</small></p><button class="btn btn-info" onclick="app.sportingController.buy('nike')">Buy</button>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://greek-sandals.com/wp-content/uploads/2020/02/true-mondern-classic-1-400x300.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Chanclas</h5>
+                                <p class="card-text">Sljap sljap.</p>
+                                <p class="card-text"><small class="text-muted">$2000</small></p><button class="btn btn-info" onclick="app.sportingController.buy('chanclas')">Buy</button>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/611cmstEKfL._SL1200_.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Leaf Crown</h5>
+                                <p class="card-text">A crown made of leaves. Makes you feel special.</p>
+                                <p class="card-text"><small class="text-muted">$100</small></p><button class="btn btn-info" onclick="app.sportingController.buy('leafCrown')">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </main>
+
+
+
+
+
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
             <div class="col">
@@ -31,6 +137,12 @@
         </div>
     </footer>
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
